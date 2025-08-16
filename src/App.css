@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+:focus,
+:focus-visible
+{
+  outline: none;
+}
+
+.crm-container {
+  display: flex;
+  background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+}
+
+.crm-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

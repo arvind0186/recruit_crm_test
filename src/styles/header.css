@@ -1,0 +1,242 @@
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .search-container {
+  position: relative;
+}
+.header .search-container button:focus,
+.header .search-container button:focus-visible {
+  outline: none;
+}
+.header .search-container .search-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+.header .search-container .search-input {
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #e9ecef;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  width: 360px;
+  font-size: 0.875rem;
+}
+
+.header .header-brand {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .header-brand .header-brand-logo img {
+  width: 155px;
+  height: 34px;
+}
+.header .header-brand .header-brand-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.header .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .header-actions .header-btn.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #1170ca;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-actions .circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c8ccd2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-actions .gift-icon.circle {
+  width: 16px;
+  height: 16px;
+}
+.header .header-actions .msg-icon.circle {
+  width: 18px;
+  height: 14px;
+}
+.header .header-actions .bell-icon.circle {
+  width: 15px;
+  height: 17px;
+}
+
+.header .header-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+.header .header-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.header .header-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.header .header-icon:hover {
+  color: #1f2937;
+}
+
+.header .header-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .header-profile .header-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+}
+.header .header-profile .header-profile-info {
+  font-size: 0.875rem;
+}
+.header .header-profile .header-profile-info .header-profile-name {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.header .header-profile .header-profile-info .header-profile-company {
+  font-size: 13px;
+  font-family: "Source Sans 3", sans-serif;
+  color: #192435;
+}
+
+.breadcrumb {
+  padding: 15px;
+  font-size: 0.875rem;
+  color: #4b5563;
+  display: flex;
+}
+.breadcrumb .link {
+  font-weight: 590;
+}
+.breadcrumb .link-number {
+  border: 1px solid #e9ecef;
+  padding: 0px 8px 0px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 590;
+  margin-left: 5px;
+}
+.breadcrumb span {
+  padding: 0px 5px 0px;
+}
+.breadcrumb .leftarrow {
+  margin-top: 5px;
+}
+.breadcrumb .breadcrumb-link {
+  color: #2563eb;
+  font-weight: 590;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.breadcrumb .breadcrumb-link:hover {
+  color: #1e40af;
+}
+
+.breadcrumb-section {
+  display: flex;
+  background-color: #f9fafb;
+  justify-content: space-between;
+}
+.breadcrumb-section .calltoaction {
+  margin-top: 10px;
+}
+.breadcrumb-section .calltoaction button {
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  background: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 590;
+  font-style: Semibold;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+@media only screen and (max-width: 991px) {
+  .header .search-container .search-input {
+    width: 100%;
+  }
+  .header .header-actions {
+    gap: 0.5rem;
+  }
+  .header .header-actions .header-btn.circle {
+    width: 30px;
+    height: 30px;
+  }
+  .header .header-actions .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .breadcrumb-section {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .profile-detail-label{
+    min-width:130px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-brand-logo{
+    margin: 10px 0px;
+  }
+  .breadcrumb-section{
+    display: block;
+  }
+  .breadcrumb{
+    padding: 10px;
+  }
+  .breadcrumb-section .calltoaction{
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+  .breadcrumb-section .calltoaction button{
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
