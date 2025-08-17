@@ -98,8 +98,8 @@ export default function ProfileHeader({ profileData, setProfileData, isEditing, 
           ))}
 
           <div className="profile-edit-actions">
-            <button type="submit">Save</button>
-            <button type="button" onClick={handleCancel}>Cancel</button>
+            <button type="submit" className="savebtn">Save</button>
+            <button type="button" className="cancelbtn" onClick={handleCancel}>Cancel</button>
           </div>
         </form>
       )}
